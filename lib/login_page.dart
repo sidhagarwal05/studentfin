@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_auth_buttons/flutter_auth_buttons.dart';
-import 'package:studentfin/welcome_screen.dart';
 import 'package:auth_buttons/auth_buttons.dart';
 import 'auth.dart';
+import 'form.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -34,7 +33,7 @@ class LoginPageState extends State<LoginPage> {
                     Navigator.of(context).push(
                       MaterialPageRoute(
                         builder: (context) {
-                          return WelcomeScreen();
+                          return UserInfoScreen();
                         },
                       ),
                     );

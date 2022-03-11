@@ -33,6 +33,7 @@ dependencies:
   google_sign_in: ^4.4.4
   flutter_auth_buttons: ^0.5.0
   auth_buttons:
+  syncfusion_flutter_datepicker:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
