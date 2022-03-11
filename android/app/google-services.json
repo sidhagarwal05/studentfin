@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "495803166005",
+    "project_id": "student-fin",
+    "storage_bucket": "student-fin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:495803166005:android:9b4d15fabb83627c0ef07c",
+        "android_client_info": {
+          "package_name": "com.innovation.studentfin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "495803166005-pcco8q0jj73cf93nm7bao25jd2pl50mh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.innovation.studentfin",
+            "certificate_hash": "c7be386fdc559b774d29230847d10768756aed83"
+          }
+        },
+        {
+          "client_id": "495803166005-omhff8s7tjl2m28d5esnh3j92ucev1oj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1J_Lm1y6x6UFq4hFTQTyBCZDYqtM2z5c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "495803166005-omhff8s7tjl2m28d5esnh3j92ucev1oj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
