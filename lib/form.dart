@@ -4,6 +4,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 import 'auth.dart';
+import 'home.dart';
 import 'login_page.dart';
 
 import 'package:syncfusion_flutter_datepicker/datepicker.dart';
@@ -59,7 +60,21 @@ class _UserInfoScreenState extends State<UserInfoScreen>
                       padding: EdgeInsets.all(25),
                       child: Column(
                         children: <Widget>[
-
+                          const SizedBox(
+                            height: 20,
+                          ),
+                          const Text("Enter the details: ",
+                              style: TextStyle(
+                                  color: Colors.deepOrange,
+                                  fontSize: 30,
+                                  fontWeight: FontWeight.bold,
+                                  fontStyle: FontStyle.normal,
+                                  shadows:[Shadow(color:Colors.black54, offset:Offset(1,2), blurRadius: 4 ) ]
+                              )
+                          ),
+                          const SizedBox(
+                            height: 10,
+                          ),
                           Container(
                             width: double.infinity,
                             padding: EdgeInsets.all(8),
@@ -175,7 +190,7 @@ class _UserInfoScreenState extends State<UserInfoScreen>
                             children: [
 
                               GestureDetector(
-                                  child: new Icon(Icons.calendar_today_rounded,
+                                  child: const Icon(Icons.calendar_today_rounded,
                                   size:40,
                                   color: Colors.black,),
                                   onTap: () async {
@@ -350,6 +365,17 @@ class _UserInfoScreenState extends State<UserInfoScreen>
                                         )
                                       ],
                                     );},);
+
+                              }
+                              else{
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) {
+                                      return Home();
+                                    },
+                                  ),
+                                );
+
                               }
                             },
                           ),

@@ -42,7 +42,7 @@ class WelcomeScreen extends StatelessWidget {
                   SizedBox(height: 5),
                   Text(
                     email,
-                    style: TextStyle(
+                    style: const TextStyle(
                         fontSize: 16,
                         color: Colors.black,
                         fontWeight: FontWeight.normal),
@@ -55,7 +55,7 @@ class WelcomeScreen extends StatelessWidget {
                 Icons.exit_to_app,
                 color: Colors.red,
               ),
-              title: Text(
+              title: const Text(
                 "Sign Out",
                 style: TextStyle(
                   fontSize: 18,
