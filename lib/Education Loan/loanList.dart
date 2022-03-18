@@ -28,316 +28,340 @@ class _UserInfoScreenState extends State<LoanList>
 
     return Scaffold(
         backgroundColor: Colors.white,
-        body:
-                  Accordion(
-                    maxOpenSections: 2,
-                    headerBackgroundColorOpened: Colors.black54,
-                    disableScrolling: false,
-                    headerPadding:
-                    const EdgeInsets.symmetric(vertical: 7, horizontal: 15),
+        body: Column(
+            children: [
+              const SizedBox(
+                height: 40,
+              ),
+              Text("Available Options: ",
+                  style: TextStyle(
+                      color: Colors.deepOrange,
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                      fontStyle: FontStyle.normal,
+                      shadows:[Shadow(color:Colors.black54, offset:Offset(1,2), blurRadius: 4 ) ]
+                  )
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Expanded(child:               Accordion(
+                maxOpenSections: 2,
+                headerBackgroundColorOpened: Colors.black54,
+                disableScrolling: false,
+                headerPadding:
+                const EdgeInsets.symmetric(vertical: 7, horizontal: 15),
+                // sectionOpeningHapticFeedback: SectionHapticFeedback.heavy,
+                // sectionClosingHapticFeedback: SectionHapticFeedback.light,
+                // openAndCloseAnimation: false,
+
+                children: [
+
+                  AccordionSection(
+                    isOpen: true,
+                    leftIcon: const Icon(Icons.insights_rounded, color: Colors.white),
+                    headerBackgroundColor: Colors.black,
+                    headerBackgroundColorOpened: Colors.red,
+                    header:Column(
+                        crossAxisAlignment:CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            height: 15,
+                          ),
+                          Text('XYZ Bank', style: _headerStyle),
+
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+
+                            children: [
+
+                              Text('10%', style: _headerStyle),
+                              SizedBox(
+                                width: 15,
+                              ),
+                              Text('♡ 4.8', style: _headerStyle),
+                            ],
+                          ),
+                          SizedBox(
+                            height: 10,
+                          )
+
+                        ]
+                    ),
+                    content: Text(_loremIpsum, style: _contentStyle),
+                    contentHorizontalPadding: 20,
+                    contentBorderWidth: 1,
                     // sectionOpeningHapticFeedback: SectionHapticFeedback.heavy,
-                    // sectionClosingHapticFeedback: SectionHapticFeedback.light,
-                    // openAndCloseAnimation: false,
-                    children: [
-                      AccordionSection(
-                        isOpen: true,
-                        leftIcon: const Icon(Icons.insights_rounded, color: Colors.white),
-                        headerBackgroundColor: Colors.black,
-                        headerBackgroundColorOpened: Colors.red,
-                        header:Column(
-                            crossAxisAlignment:CrossAxisAlignment.start,
-                            children: [
-                              SizedBox(
-                                height: 15,
-                              ),
-                              Text('XYZ Bank', style: _headerStyle),
-
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-
-                                children: [
-
-                                  Text('10%', style: _headerStyle),
-                                  SizedBox(
-                                    width: 15,
-                                  ),
-                                  Text('♡ 4.8', style: _headerStyle),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 10,
-                              )
-
-                            ]
-                        ),
-                        content: Text(_loremIpsum, style: _contentStyle),
-                        contentHorizontalPadding: 20,
-                        contentBorderWidth: 1,
-                        // sectionOpeningHapticFeedback: SectionHapticFeedback.heavy,
-                        // sectionClosingHapticFeedback: SectionHapticFeedback.vibrate,
-                      ),
-                      AccordionSection(
-                        isOpen: true,
-                        leftIcon: const Icon(Icons.insights_rounded, color: Colors.white),
-                        headerBackgroundColor: Colors.black,
-                        headerBackgroundColorOpened: Colors.red,
-                        header:Column(
-                            crossAxisAlignment:CrossAxisAlignment.start,
-                            children: [
-                              SizedBox(
-                                height: 15,
-                              ),
-                              Text('XYZ Bank', style: _headerStyle),
-
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-
-                                children: [
-
-                                  Text('10%', style: _headerStyle),
-                                  SizedBox(
-                                    width: 15,
-                                  ),
-                                  Text('♡ 4.8', style: _headerStyle),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 10,
-                              )
-
-                            ]
-                        ),
-                        content: Text(_loremIpsum, style: _contentStyle),
-                        contentHorizontalPadding: 20,
-                        contentBorderWidth: 1,
-                        // sectionOpeningHapticFeedback: SectionHapticFeedback.heavy,
-                        // sectionClosingHapticFeedback: SectionHapticFeedback.vibrate,
-                      ),
-                      AccordionSection(
-                        isOpen: true,
-                        leftIcon: const Icon(Icons.insights_rounded, color: Colors.white),
-                        headerBackgroundColor: Colors.black,
-                        headerBackgroundColorOpened: Colors.red,
-                        header:Column(
-                            crossAxisAlignment:CrossAxisAlignment.start,
-                            children: [
-                              SizedBox(
-                                height: 15,
-                              ),
-                              Text('XYZ Bank', style: _headerStyle),
-
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-
-                                children: [
-
-                                  Text('10%', style: _headerStyle),
-                                  SizedBox(
-                                    width: 15,
-                                  ),
-                                  Text('♡ 4.8', style: _headerStyle),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 10,
-                              )
-
-                            ]
-                        ),
-                        content: Text(_loremIpsum, style: _contentStyle),
-                        contentHorizontalPadding: 20,
-                        contentBorderWidth: 1,
-                        // sectionOpeningHapticFeedback: SectionHapticFeedback.heavy,
-                        // sectionClosingHapticFeedback: SectionHapticFeedback.vibrate,
-                      ),
-                      AccordionSection(
-                        isOpen: true,
-                        leftIcon: const Icon(Icons.insights_rounded, color: Colors.white),
-                        headerBackgroundColor: Colors.black,
-                        headerBackgroundColorOpened: Colors.red,
-                        header:Column(
-                            crossAxisAlignment:CrossAxisAlignment.start,
-                            children: [
-                              SizedBox(
-                                height: 15,
-                              ),
-                              Text('XYZ Bank', style: _headerStyle),
-
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-
-                                children: [
-
-                                  Text('10%', style: _headerStyle),
-                                  SizedBox(
-                                    width: 15,
-                                  ),
-                                  Text('♡ 4.8', style: _headerStyle),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 10,
-                              )
-
-                            ]
-                        ),
-                        content: Text(_loremIpsum, style: _contentStyle),
-                        contentHorizontalPadding: 20,
-                        contentBorderWidth: 1,
-                        // sectionOpeningHapticFeedback: SectionHapticFeedback.heavy,
-                        // sectionClosingHapticFeedback: SectionHapticFeedback.vibrate,
-                      ),
-                      AccordionSection(
-                        isOpen: true,
-                        leftIcon: const Icon(Icons.insights_rounded, color: Colors.white),
-                        headerBackgroundColor: Colors.black,
-                        headerBackgroundColorOpened: Colors.red,
-                        header:Column(
-                            crossAxisAlignment:CrossAxisAlignment.start,
-                            children: [
-                              SizedBox(
-                                height: 15,
-                              ),
-                              Text('XYZ Bank', style: _headerStyle),
-
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-
-                                children: [
-
-                                  Text('10%', style: _headerStyle),
-                                  SizedBox(
-                                    width: 15,
-                                  ),
-                                  Text('♡ 4.8', style: _headerStyle),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 10,
-                              )
-
-                            ]
-                        ),
-                        content: Text(_loremIpsum, style: _contentStyle),
-                        contentHorizontalPadding: 20,
-                        contentBorderWidth: 1,
-                        // sectionOpeningHapticFeedback: SectionHapticFeedback.heavy,
-                        // sectionClosingHapticFeedback: SectionHapticFeedback.vibrate,
-                      ),
-                      AccordionSection(
-                        isOpen: true,
-                        leftIcon: const Icon(Icons.insights_rounded, color: Colors.white),
-                        headerBackgroundColor: Colors.black,
-                        headerBackgroundColorOpened: Colors.red,
-                        header:Column(
-                            crossAxisAlignment:CrossAxisAlignment.start,
-                            children: [
-                              SizedBox(
-                                height: 15,
-                              ),
-                              Text('XYZ Bank', style: _headerStyle),
-
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-
-                                children: [
-
-                                  Text('10%', style: _headerStyle),
-                                  SizedBox(
-                                    width: 15,
-                                  ),
-                                  Text('♡ 4.8', style: _headerStyle),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 10,
-                              )
-
-                            ]
-                        ),
-                        content: Text(_loremIpsum, style: _contentStyle),
-                        contentHorizontalPadding: 20,
-                        contentBorderWidth: 1,
-                        // sectionOpeningHapticFeedback: SectionHapticFeedback.heavy,
-                        // sectionClosingHapticFeedback: SectionHapticFeedback.vibrate,
-                      ),
-                      AccordionSection(
-                        isOpen: true,
-                        leftIcon: const Icon(Icons.insights_rounded, color: Colors.white),
-                        headerBackgroundColor: Colors.black,
-                        headerBackgroundColorOpened: Colors.red,
-                        header:Column(
-                            crossAxisAlignment:CrossAxisAlignment.start,
-                            children: [
-                              SizedBox(
-                                height: 15,
-                              ),
-                              Text('XYZ Bank', style: _headerStyle),
-
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-
-                                children: [
-
-                                  Text('10%', style: _headerStyle),
-                                  SizedBox(
-                                    width: 15,
-                                  ),
-                                  Text('♡ 4.8', style: _headerStyle),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 10,
-                              )
-
-                            ]
-                        ),
-                        content: Text(_loremIpsum, style: _contentStyle),
-                        contentHorizontalPadding: 20,
-                        contentBorderWidth: 1,
-                        // sectionOpeningHapticFeedback: SectionHapticFeedback.heavy,
-                        // sectionClosingHapticFeedback: SectionHapticFeedback.vibrate,
-                      ),
-                      AccordionSection(
-                        isOpen: true,
-                        leftIcon: const Icon(Icons.insights_rounded, color: Colors.white),
-                        headerBackgroundColor: Colors.black,
-                        headerBackgroundColorOpened: Colors.red,
-                        header:Column(
-                            crossAxisAlignment:CrossAxisAlignment.start,
-                            children: [
-                              SizedBox(
-                                height: 15,
-                              ),
-                              Text('XYZ Bank', style: _headerStyle),
-
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-
-                                children: [
-
-                                  Text('10%', style: _headerStyle),
-                                  SizedBox(
-                                    width: 15,
-                                  ),
-                                  Text('♡ 4.8', style: _headerStyle),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 10,
-                              )
-
-                            ]
-                        ),
-                        content: Text(_loremIpsum, style: _contentStyle),
-                        contentHorizontalPadding: 20,
-                        contentBorderWidth: 1,
-                        // sectionOpeningHapticFeedback: SectionHapticFeedback.heavy,
-                        // sectionClosingHapticFeedback: SectionHapticFeedback.vibrate,
-                      ),
-
-                    ],
+                    // sectionClosingHapticFeedback: SectionHapticFeedback.vibrate,
                   ),
+                  AccordionSection(
+                    isOpen: true,
+                    leftIcon: const Icon(Icons.insights_rounded, color: Colors.white),
+                    headerBackgroundColor: Colors.black,
+                    headerBackgroundColorOpened: Colors.red,
+                    header:Column(
+                        crossAxisAlignment:CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            height: 15,
+                          ),
+                          Text('XYZ Bank', style: _headerStyle),
+
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+
+                            children: [
+
+                              Text('10%', style: _headerStyle),
+                              SizedBox(
+                                width: 15,
+                              ),
+                              Text('♡ 4.8', style: _headerStyle),
+                            ],
+                          ),
+                          SizedBox(
+                            height: 10,
+                          )
+
+                        ]
+                    ),
+                    content: Text(_loremIpsum, style: _contentStyle),
+                    contentHorizontalPadding: 20,
+                    contentBorderWidth: 1,
+                    // sectionOpeningHapticFeedback: SectionHapticFeedback.heavy,
+                    // sectionClosingHapticFeedback: SectionHapticFeedback.vibrate,
+                  ),
+                  AccordionSection(
+                    isOpen: true,
+                    leftIcon: const Icon(Icons.insights_rounded, color: Colors.white),
+                    headerBackgroundColor: Colors.black,
+                    headerBackgroundColorOpened: Colors.red,
+                    header:Column(
+                        crossAxisAlignment:CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            height: 15,
+                          ),
+                          Text('XYZ Bank', style: _headerStyle),
+
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+
+                            children: [
+
+                              Text('10%', style: _headerStyle),
+                              SizedBox(
+                                width: 15,
+                              ),
+                              Text('♡ 4.8', style: _headerStyle),
+                            ],
+                          ),
+                          const SizedBox(
+                            height: 10,
+                          )
+
+                        ]
+                    ),
+                    content: Text(_loremIpsum, style: _contentStyle),
+                    contentHorizontalPadding: 20,
+                    contentBorderWidth: 1,
+                    // sectionOpeningHapticFeedback: SectionHapticFeedback.heavy,
+                    // sectionClosingHapticFeedback: SectionHapticFeedback.vibrate,
+                  ),
+                  AccordionSection(
+                    isOpen: true,
+                    leftIcon: const Icon(Icons.insights_rounded, color: Colors.white),
+                    headerBackgroundColor: Colors.black,
+                    headerBackgroundColorOpened: Colors.red,
+                    header:Column(
+                        crossAxisAlignment:CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            height: 15,
+                          ),
+                          Text('XYZ Bank', style: _headerStyle),
+
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+
+                            children: [
+
+                              Text('10%', style: _headerStyle),
+                              SizedBox(
+                                width: 15,
+                              ),
+                              Text('♡ 4.8', style: _headerStyle),
+                            ],
+                          ),
+                          SizedBox(
+                            height: 10,
+                          )
+
+                        ]
+                    ),
+                    content: Text(_loremIpsum, style: _contentStyle),
+                    contentHorizontalPadding: 20,
+                    contentBorderWidth: 1,
+                    // sectionOpeningHapticFeedback: SectionHapticFeedback.heavy,
+                    // sectionClosingHapticFeedback: SectionHapticFeedback.vibrate,
+                  ),
+                  AccordionSection(
+                    isOpen: true,
+                    leftIcon: const Icon(Icons.insights_rounded, color: Colors.white),
+                    headerBackgroundColor: Colors.black,
+                    headerBackgroundColorOpened: Colors.red,
+                    header:Column(
+                        crossAxisAlignment:CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            height: 15,
+                          ),
+                          Text('XYZ Bank', style: _headerStyle),
+
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+
+                            children: [
+
+                              Text('10%', style: _headerStyle),
+                              SizedBox(
+                                width: 15,
+                              ),
+                              Text('♡ 4.8', style: _headerStyle),
+                            ],
+                          ),
+                          SizedBox(
+                            height: 10,
+                          )
+
+                        ]
+                    ),
+                    content: Text(_loremIpsum, style: _contentStyle),
+                    contentHorizontalPadding: 20,
+                    contentBorderWidth: 1,
+                    // sectionOpeningHapticFeedback: SectionHapticFeedback.heavy,
+                    // sectionClosingHapticFeedback: SectionHapticFeedback.vibrate,
+                  ),
+                  AccordionSection(
+                    isOpen: true,
+                    leftIcon: const Icon(Icons.insights_rounded, color: Colors.white),
+                    headerBackgroundColor: Colors.black,
+                    headerBackgroundColorOpened: Colors.red,
+                    header:Column(
+                        crossAxisAlignment:CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            height: 15,
+                          ),
+                          Text('XYZ Bank', style: _headerStyle),
+
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+
+                            children: [
+
+                              Text('10%', style: _headerStyle),
+                              SizedBox(
+                                width: 15,
+                              ),
+                              Text('♡ 4.8', style: _headerStyle),
+                            ],
+                          ),
+                          SizedBox(
+                            height: 10,
+                          )
+
+                        ]
+                    ),
+                    content: Text(_loremIpsum, style: _contentStyle),
+                    contentHorizontalPadding: 20,
+                    contentBorderWidth: 1,
+                    // sectionOpeningHapticFeedback: SectionHapticFeedback.heavy,
+                    // sectionClosingHapticFeedback: SectionHapticFeedback.vibrate,
+                  ),
+                  AccordionSection(
+                    isOpen: true,
+                    leftIcon: const Icon(Icons.insights_rounded, color: Colors.white),
+                    headerBackgroundColor: Colors.black,
+                    headerBackgroundColorOpened: Colors.red,
+                    header:Column(
+                        crossAxisAlignment:CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            height: 15,
+                          ),
+                          Text('XYZ Bank', style: _headerStyle),
+
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+
+                            children: [
+
+                              Text('10%', style: _headerStyle),
+                              SizedBox(
+                                width: 15,
+                              ),
+                              Text('♡ 4.8', style: _headerStyle),
+                            ],
+                          ),
+                          SizedBox(
+                            height: 10,
+                          )
+
+                        ]
+                    ),
+                    content: Text(_loremIpsum, style: _contentStyle),
+                    contentHorizontalPadding: 20,
+                    contentBorderWidth: 1,
+                    // sectionOpeningHapticFeedback: SectionHapticFeedback.heavy,
+                    // sectionClosingHapticFeedback: SectionHapticFeedback.vibrate,
+                  ),
+                  AccordionSection(
+                    isOpen: true,
+                    leftIcon: const Icon(Icons.insights_rounded, color: Colors.white),
+                    headerBackgroundColor: Colors.black,
+                    headerBackgroundColorOpened: Colors.red,
+                    header:Column(
+                        crossAxisAlignment:CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            height: 15,
+                          ),
+                          Text('XYZ Bank', style: _headerStyle),
+
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+
+                            children: [
+
+                              Text('10%', style: _headerStyle),
+                              SizedBox(
+                                width: 15,
+                              ),
+                              Text('♡ 4.8', style: _headerStyle),
+                            ],
+                          ),
+                          SizedBox(
+                            height: 10,
+                          )
+
+                        ]
+                    ),
+                    content: Text(_loremIpsum, style: _contentStyle),
+                    contentHorizontalPadding: 20,
+                    contentBorderWidth: 1,
+                    // sectionOpeningHapticFeedback: SectionHapticFeedback.heavy,
+                    // sectionClosingHapticFeedback: SectionHapticFeedback.vibrate,
+                  ),
+
+                ],
+              ),
+              ),
+
+            ],
+          ),
+
+
 
     );
   }
