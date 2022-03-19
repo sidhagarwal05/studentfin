@@ -4,6 +4,8 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:accordion/accordion.dart';
 
+import '../applied.dart';
+
 class ScholarshipList extends StatefulWidget {
 
   @override
@@ -41,7 +43,7 @@ class _UserInfoScreenState extends State<ScholarshipList>
                   shadows:[Shadow(color:Colors.black54, offset:Offset(1,2), blurRadius: 4 ) ]
               )
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Expanded(child:      Accordion(
@@ -85,7 +87,33 @@ class _UserInfoScreenState extends State<ScholarshipList>
 
                     ]
                 ),
-                content: Text(_loremIpsum, style: _contentStyle),
+                content:  Column(
+                  children: [
+                    Text(_loremIpsum, style: _contentStyle),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+
+                        FlatButton(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(18.0),
+                            side: BorderSide(color: Colors.red),
+                          ),
+                          onPressed: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) {
+                                  return Applied();
+                                },
+                              ),
+                            );
+                          },
+                          child: Text("Apply now"),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
                 contentHorizontalPadding: 20,
                 contentBorderWidth: 1,
                 // sectionOpeningHapticFeedback: SectionHapticFeedback.heavy,
