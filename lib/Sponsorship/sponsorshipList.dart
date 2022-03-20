@@ -3,6 +3,8 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:accordion/accordion.dart';
 
+import '../applied.dart';
+import '../splash_screen.dart';
 import 'projectFunding.dart';
 
 class SponsorshipList extends StatefulWidget {
@@ -29,12 +31,11 @@ class _UserInfoScreenState extends State<SponsorshipList>
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Container(
-              child: Text(
-                'Personal Project Funding',
-                style: TextStyle(color: Colors.white, fontSize: 20),
-                textAlign: TextAlign.center,
-              ),
-
+            child: const Text(
+              'Personal Project Funding',
+              style: TextStyle(color: Colors.white, fontSize: 20),
+              textAlign: TextAlign.center,
+            ),
             width: 200,
             height: 50,
             decoration: BoxDecoration(
@@ -45,7 +46,7 @@ class _UserInfoScreenState extends State<SponsorshipList>
                 borderRadius: BorderRadius.all(Radius.circular(10))),
           ),
         ),
-        onTap: (){
+        onTap: () {
           Navigator.of(context).push(
             MaterialPageRoute(
               builder: (context) {
@@ -73,7 +74,7 @@ class _UserInfoScreenState extends State<SponsorshipList>
                         offset: Offset(1, 2),
                         blurRadius: 4)
                   ])),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Expanded(
@@ -96,29 +97,55 @@ class _UserInfoScreenState extends State<SponsorshipList>
                   header: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        SizedBox(
+                        const SizedBox(
                           height: 15,
                         ),
-                        Text('XYZ Company', style: _headerStyle),
+                        Text('ADOPT A HERITAGE ', style: _headerStyle),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
-                            Text('Apply by DD/MM/YY', style: _headerStyle),
-                            SizedBox(
+                            Text('Apply by 15/05/22', style: _headerStyle),
+                            const SizedBox(
                               width: 15,
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         )
                       ]),
-                  content: Text(_loremIpsum, style: _contentStyle),
+                  content: Column(
+                    children: [
+                      Text("This project is envisioned to fulfill the objective of the Government of India to provide an enhanced tourism experience to all travelers. These organizations would be known as “Monument Mitras” for their collaboration initiative.", style: _contentStyle),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          FlatButton(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18.0),
+                              side: const BorderSide(color: Colors.red),
+                            ),
+                            onPressed: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) {
+                                    return SplashScreen();
+                                  },
+                                ),
+                              );
+                            },
+                            child: const Text("Apply now"),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                   contentHorizontalPadding: 20,
                   contentBorderWidth: 1,
                   // sectionOpeningHapticFeedback: SectionHapticFeedback.heavy,
                   // sectionClosingHapticFeedback: SectionHapticFeedback.vibrate,
                 ),
+
                 AccordionSection(
                   isOpen: true,
                   leftIcon:
@@ -128,29 +155,55 @@ class _UserInfoScreenState extends State<SponsorshipList>
                   header: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        SizedBox(
+                        const SizedBox(
                           height: 15,
                         ),
-                        Text('XYZ Company', style: _headerStyle),
+                        Text('Atal New India Challenge', style: _headerStyle),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
-                            Text('Apply by DD/MM/YY', style: _headerStyle),
-                            SizedBox(
+                            Text('Apply by 30/04/22', style: _headerStyle),
+                            const SizedBox(
                               width: 15,
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         )
                       ]),
-                  content: Text(_loremIpsum, style: _contentStyle),
+                  content: Column(
+                    children: [
+                      Text("Atal New India Challenge is an initiative by Atal Innovation Mission aimed at supporting innovators to create products/solutions based on advanced technologies in areas of national importance and social relevance through a grant-based mechanism.", style: _contentStyle),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          FlatButton(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18.0),
+                              side: const BorderSide(color: Colors.red),
+                            ),
+                            onPressed: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) {
+                                    return SplashScreen();
+                                  },
+                                ),
+                              );
+                            },
+                            child: const Text("Apply now"),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                   contentHorizontalPadding: 20,
                   contentBorderWidth: 1,
                   // sectionOpeningHapticFeedback: SectionHapticFeedback.heavy,
                   // sectionClosingHapticFeedback: SectionHapticFeedback.vibrate,
                 ),
+
                 AccordionSection(
                   isOpen: true,
                   leftIcon:
@@ -160,29 +213,55 @@ class _UserInfoScreenState extends State<SponsorshipList>
                   header: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        SizedBox(
+                        const SizedBox(
                           height: 15,
                         ),
-                        Text('XYZ Company', style: _headerStyle),
+                        Text('INDIATECH HK PITCHDAY', style: _headerStyle),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
-                            Text('Apply by DD/MM/YY', style: _headerStyle),
-                            SizedBox(
+                            Text('Apply by 10/05/22', style: _headerStyle),
+                            const SizedBox(
                               width: 15,
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         )
                       ]),
-                  content: Text(_loremIpsum, style: _contentStyle),
+                  content: Column(
+                    children: [
+                      Text('We are a community initiative to serve as a platform for engaging of Investors and Entrepreneurs with an interest in Indian startup ecosystem, in Hong Kong, China Greater Bay and in India.', style: _contentStyle),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          FlatButton(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18.0),
+                              side: const BorderSide(color: Colors.red),
+                            ),
+                            onPressed: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) {
+                                    return SplashScreen();
+                                  },
+                                ),
+                              );
+                            },
+                            child: const Text("Apply now"),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                   contentHorizontalPadding: 20,
                   contentBorderWidth: 1,
                   // sectionOpeningHapticFeedback: SectionHapticFeedback.heavy,
                   // sectionClosingHapticFeedback: SectionHapticFeedback.vibrate,
                 ),
+
                 AccordionSection(
                   isOpen: true,
                   leftIcon:
@@ -192,29 +271,55 @@ class _UserInfoScreenState extends State<SponsorshipList>
                   header: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        SizedBox(
+                        const SizedBox(
                           height: 15,
                         ),
-                        Text('XYZ Company', style: _headerStyle),
+                        Text('M.TECH PROJECTS AS INTERNSHIP WITH SMALL AND MEDIUM ENTERPRISES (MSMES)', style: _headerStyle),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Text('Apply by DD/MM/YY', style: _headerStyle),
-                            SizedBox(
+                            const SizedBox(
                               width: 15,
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         )
                       ]),
-                  content: Text(_loremIpsum, style: _contentStyle),
+                  content: Column(
+                    children: [
+                      Text('The main objective of the scheme is to nurture an innovation ecosystem that benefits the technologically deficient MSMEs and technical institutes both. 408 Small and Medium Enterprises have given requirement of 738 Technology students.', style: _contentStyle),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          FlatButton(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18.0),
+                              side: const BorderSide(color: Colors.red),
+                            ),
+                            onPressed: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) {
+                                    return SplashScreen();
+                                  },
+                                ),
+                              );
+                            },
+                            child: const Text("Apply now"),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                   contentHorizontalPadding: 20,
                   contentBorderWidth: 1,
                   // sectionOpeningHapticFeedback: SectionHapticFeedback.heavy,
                   // sectionClosingHapticFeedback: SectionHapticFeedback.vibrate,
                 ),
+
                 AccordionSection(
                   isOpen: true,
                   leftIcon:
@@ -224,29 +329,55 @@ class _UserInfoScreenState extends State<SponsorshipList>
                   header: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        SizedBox(
+                        const SizedBox(
                           height: 15,
                         ),
-                        Text('XYZ Company', style: _headerStyle),
+                        Text('AICTE-INAE TRAVEL GRANT SCHEME', style: _headerStyle),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Text('Apply by DD/MM/YY', style: _headerStyle),
-                            SizedBox(
+                            const SizedBox(
                               width: 15,
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         )
                       ]),
-                  content: Text(_loremIpsum, style: _contentStyle),
+                  content: Column(
+                    children: [
+                      Text('An “AICTE-INAE Travel Grant Scheme” for Engineering Students to present papers abroad has been launched for enhancing the quality of engineering education in the country.', style: _contentStyle),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          FlatButton(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18.0),
+                              side: const BorderSide(color: Colors.red),
+                            ),
+                            onPressed: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) {
+                                    return SplashScreen();
+                                  },
+                                ),
+                              );
+                            },
+                            child: const Text("Apply now"),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                   contentHorizontalPadding: 20,
                   contentBorderWidth: 1,
                   // sectionOpeningHapticFeedback: SectionHapticFeedback.heavy,
                   // sectionClosingHapticFeedback: SectionHapticFeedback.vibrate,
                 ),
+
                 AccordionSection(
                   isOpen: true,
                   leftIcon:
@@ -256,24 +387,49 @@ class _UserInfoScreenState extends State<SponsorshipList>
                   header: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        SizedBox(
+                        const SizedBox(
                           height: 15,
                         ),
-                        Text('XYZ Company', style: _headerStyle),
+                        Text('SUPPORT TO STUDENTS FOR PARTICIPATING IN COMPETITION ABROAD (SSPCA)', style: _headerStyle),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Text('Apply by DD/MM/YY', style: _headerStyle),
-                            SizedBox(
+                            const SizedBox(
                               width: 15,
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         )
                       ]),
-                  content: Text(_loremIpsum, style: _contentStyle),
+                  content: Column(
+                    children: [
+                      Text('The objective of the scheme is to provide travel assistance registration fees to a team of minimum 2 to 10 students for attending competition at international level in order to encourage engineering students to improve their field of technical education.', style: _contentStyle),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          FlatButton(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18.0),
+                              side: const BorderSide(color: Colors.red),
+                            ),
+                            onPressed: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) {
+                                    return SplashScreen();
+                                  },
+                                ),
+                              );
+                            },
+                            child: const Text("Apply now"),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                   contentHorizontalPadding: 20,
                   contentBorderWidth: 1,
                   // sectionOpeningHapticFeedback: SectionHapticFeedback.heavy,

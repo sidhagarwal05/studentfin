@@ -2,6 +2,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:studentfin/splashscreen2.dart';
 
 import 'auth.dart';
 import 'home.dart';
@@ -371,7 +372,7 @@ class _UserInfoScreenState extends State<UserInfoScreen>
                                 Navigator.of(context).push(
                                   MaterialPageRoute(
                                     builder: (context) {
-                                      return Home();
+                                      return SplashScreen2();
                                     },
                                   ),
                                 );
