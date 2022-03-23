@@ -46,7 +46,7 @@ class _UserInfoScreenState extends State<UserInfoScreen>
 
     return Scaffold(
         key: scaffoldKey,
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0xFF004D40),
         body: SafeArea(
           child: Center(
             child: SingleChildScrollView(
@@ -66,7 +66,7 @@ class _UserInfoScreenState extends State<UserInfoScreen>
                           ),
                           const Text("Enter the details: ",
                               style: TextStyle(
-                                  color: Colors.deepOrange,
+                                  color: Colors.white,
                                   fontSize: 30,
                                   fontWeight: FontWeight.bold,
                                   fontStyle: FontStyle.normal,
@@ -179,7 +179,7 @@ class _UserInfoScreenState extends State<UserInfoScreen>
                             ),
                           ),
                           const SizedBox(
-                            height: 15,
+                            height: 10,
                           ),
                       Container(
                         width: double.infinity,
@@ -378,27 +378,6 @@ class _UserInfoScreenState extends State<UserInfoScreen>
                                 );
 
                               }
-                            },
-                          ),
-                          //logut
-                          RaisedButton(
-                            elevation: 4,
-                            padding: EdgeInsets.symmetric(
-                                vertical: 16, horizontal: 38),
-                            color: Colors.teal,
-                            textColor: Colors.white,
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20)),
-                            child: const Text(
-                              "Logout",
-                              style: TextStyle(fontSize: 18),
-                            ),
-                            onPressed: () async {
-                              signOutGoogle();
-                              Navigator.of(context).pushAndRemoveUntil(
-                                  MaterialPageRoute(builder: (context) {
-                                    return LoginPage();
-                                  }), ModalRoute.withName('/'));
                             },
                           ),
 

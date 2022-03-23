@@ -26,7 +26,7 @@ class _UserInfoScreenState extends State<SponsorshipList>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor:Color(0xFF004D40),
       floatingActionButton: GestureDetector(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -39,9 +39,9 @@ class _UserInfoScreenState extends State<SponsorshipList>
             width: 200,
             height: 50,
             decoration: BoxDecoration(
-                color: Colors.teal,
+                color: Colors.indigo,
                 border: Border.all(
-                  color: Colors.teal,
+                  color: Colors.indigo,
                 ),
                 borderRadius: BorderRadius.all(Radius.circular(10))),
           ),
@@ -60,11 +60,11 @@ class _UserInfoScreenState extends State<SponsorshipList>
       body: Column(
         children: [
           const SizedBox(
-            height: 40,
+            height: 70,
           ),
           const Text("Available Options: ",
               style: TextStyle(
-                  color: Colors.deepOrange,
+                  color: Colors.white,
                   fontSize: 30,
                   fontWeight: FontWeight.bold,
                   fontStyle: FontStyle.normal,
@@ -93,7 +93,7 @@ class _UserInfoScreenState extends State<SponsorshipList>
                   leftIcon:
                       const Icon(Icons.insights_rounded, color: Colors.white),
                   headerBackgroundColor: Colors.black,
-                  headerBackgroundColorOpened: Colors.red,
+                  headerBackgroundColorOpened: Color(0xFF512DA8),
                   header: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -123,7 +123,7 @@ class _UserInfoScreenState extends State<SponsorshipList>
                           FlatButton(
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(18.0),
-                              side: const BorderSide(color: Colors.red),
+                              side: const BorderSide(color: Color(0xFF512DA8)),
                             ),
                             onPressed: () {
                               Navigator.of(context).push(
@@ -147,11 +147,11 @@ class _UserInfoScreenState extends State<SponsorshipList>
                 ),
 
                 AccordionSection(
-                  isOpen: true,
+                  isOpen: false,
                   leftIcon:
                   const Icon(Icons.insights_rounded, color: Colors.white),
                   headerBackgroundColor: Colors.black,
-                  headerBackgroundColorOpened: Colors.red,
+                  headerBackgroundColorOpened: Color(0xFF512DA8),
                   header: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -181,7 +181,7 @@ class _UserInfoScreenState extends State<SponsorshipList>
                           FlatButton(
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(18.0),
-                              side: const BorderSide(color: Colors.red),
+                              side: const BorderSide(color: Color(0xFF512DA8)),
                             ),
                             onPressed: () {
                               Navigator.of(context).push(
@@ -205,11 +205,11 @@ class _UserInfoScreenState extends State<SponsorshipList>
                 ),
 
                 AccordionSection(
-                  isOpen: true,
+                  isOpen: false,
                   leftIcon:
                   const Icon(Icons.insights_rounded, color: Colors.white),
                   headerBackgroundColor: Colors.black,
-                  headerBackgroundColorOpened: Colors.red,
+                  headerBackgroundColorOpened: Color(0xFF512DA8),
                   header: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -239,7 +239,7 @@ class _UserInfoScreenState extends State<SponsorshipList>
                           FlatButton(
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(18.0),
-                              side: const BorderSide(color: Colors.red),
+                              side: const BorderSide(color: Color(0xFF512DA8)),
                             ),
                             onPressed: () {
                               Navigator.of(context).push(
@@ -263,11 +263,11 @@ class _UserInfoScreenState extends State<SponsorshipList>
                 ),
 
                 AccordionSection(
-                  isOpen: true,
+                  isOpen: false,
                   leftIcon:
                   const Icon(Icons.insights_rounded, color: Colors.white),
                   headerBackgroundColor: Colors.black,
-                  headerBackgroundColorOpened: Colors.red,
+                  headerBackgroundColorOpened:Color(0xFF512DA8),
                   header: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -297,7 +297,7 @@ class _UserInfoScreenState extends State<SponsorshipList>
                           FlatButton(
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(18.0),
-                              side: const BorderSide(color: Colors.red),
+                              side: const BorderSide(color: Color(0xFF512DA8)),
                             ),
                             onPressed: () {
                               Navigator.of(context).push(
@@ -321,11 +321,11 @@ class _UserInfoScreenState extends State<SponsorshipList>
                 ),
 
                 AccordionSection(
-                  isOpen: true,
+                  isOpen: false,
                   leftIcon:
                   const Icon(Icons.insights_rounded, color: Colors.white),
                   headerBackgroundColor: Colors.black,
-                  headerBackgroundColorOpened: Colors.red,
+                  headerBackgroundColorOpened: Color(0xFF512DA8),
                   header: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -355,7 +355,7 @@ class _UserInfoScreenState extends State<SponsorshipList>
                           FlatButton(
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(18.0),
-                              side: const BorderSide(color: Colors.red),
+                              side: const BorderSide(color: Color(0xFF512DA8)),
                             ),
                             onPressed: () {
                               Navigator.of(context).push(
@@ -379,11 +379,11 @@ class _UserInfoScreenState extends State<SponsorshipList>
                 ),
 
                 AccordionSection(
-                  isOpen: true,
+                  isOpen: false,
                   leftIcon:
                   const Icon(Icons.insights_rounded, color: Colors.white),
                   headerBackgroundColor: Colors.black,
-                  headerBackgroundColorOpened: Colors.red,
+                  headerBackgroundColorOpened: Color(0xFF512DA8),
                   header: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -413,7 +413,7 @@ class _UserInfoScreenState extends State<SponsorshipList>
                           FlatButton(
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(18.0),
-                              side: const BorderSide(color: Colors.red),
+                              side: const BorderSide(color: Color(0xFF512DA8)),
                             ),
                             onPressed: () {
                               Navigator.of(context).push(

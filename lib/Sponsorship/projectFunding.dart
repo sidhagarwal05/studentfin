@@ -54,7 +54,7 @@ class _UserInfoScreenState extends State<ProjectFunding>
 
     return Scaffold(
         key: scaffoldKey,
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0xFF004D40),
         body: SafeArea(
           child: Center(
             child: SingleChildScrollView(
@@ -74,7 +74,7 @@ class _UserInfoScreenState extends State<ProjectFunding>
                           ),
                           const Text("Enter project details: ",
                               style: TextStyle(
-                                  color: Colors.deepOrange,
+                                  color: Colors.white,
                                   fontSize: 30,
                                   fontWeight: FontWeight.bold,
                                   fontStyle: FontStyle.normal,

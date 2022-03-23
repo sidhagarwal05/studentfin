@@ -26,17 +26,16 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.teal,
+      backgroundColor: Color(0xFF004D40),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Container(
             child: Image(
-              image: AssetImage('assets/logo.png'),
+              image: AssetImage('assets/logo2.png'),
             ),
 
           ),
-          SizedBox(height: 20,),
           SpinKitWave(
             color: Colors.white,
             size: 50.0,

@@ -25,15 +25,15 @@ class _UserInfoScreenState extends State<LoanList>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0xFF004D40),
       body: Column(
         children: [
           const SizedBox(
-            height: 40,
+            height: 70,
           ),
           const Text("Available Options: ",
               style: TextStyle(
-                  color: Colors.deepOrange,
+                  color: Colors.white,
                   fontSize: 30,
                   fontWeight: FontWeight.bold,
                   fontStyle: FontStyle.normal,
@@ -63,7 +63,7 @@ class _UserInfoScreenState extends State<LoanList>
                   leftIcon:
                       const Icon(Icons.account_balance, color: Colors.white),
                   headerBackgroundColor: Colors.black,
-                  headerBackgroundColorOpened: Colors.red,
+                  headerBackgroundColorOpened: Color(0xFF512DA8),
                   header: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -90,7 +90,7 @@ class _UserInfoScreenState extends State<LoanList>
                           FlatButton(
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(18.0),
-                              side: const BorderSide(color: Colors.red),
+                              side: const BorderSide(color: Colors.deepPurple),
                             ),
                             onPressed: () {
                               Navigator.of(context).push(
@@ -117,7 +117,7 @@ class _UserInfoScreenState extends State<LoanList>
                   leftIcon:
                   const Icon(Icons.account_balance, color: Colors.white),
                   headerBackgroundColor: Colors.black,
-                  headerBackgroundColorOpened: Colors.red,
+                  headerBackgroundColorOpened: Color(0xFF512DA8),
                   header: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -144,7 +144,7 @@ class _UserInfoScreenState extends State<LoanList>
                           FlatButton(
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(18.0),
-                              side: const BorderSide(color: Colors.red),
+                              side: const BorderSide(color: Colors.deepPurple),
                             ),
                             onPressed: () {
                               Navigator.of(context).push(
@@ -171,7 +171,7 @@ class _UserInfoScreenState extends State<LoanList>
                   leftIcon:
                   const Icon(Icons.account_balance, color: Colors.white),
                   headerBackgroundColor: Colors.black,
-                  headerBackgroundColorOpened: Colors.red,
+                  headerBackgroundColorOpened: Color(0xFF512DA8),
                   header: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -198,7 +198,7 @@ class _UserInfoScreenState extends State<LoanList>
                           FlatButton(
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(18.0),
-                              side: const BorderSide(color: Colors.red),
+                              side: const BorderSide(color: Colors.deepPurple),
                             ),
                             onPressed: () {
                               Navigator.of(context).push(
@@ -225,7 +225,7 @@ class _UserInfoScreenState extends State<LoanList>
                   leftIcon:
                   const Icon(Icons.account_balance, color: Colors.white),
                   headerBackgroundColor: Colors.black,
-                  headerBackgroundColorOpened: Colors.red,
+                  headerBackgroundColorOpened: Color(0xFF512DA8),
                   header: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -252,7 +252,7 @@ class _UserInfoScreenState extends State<LoanList>
                           FlatButton(
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(18.0),
-                              side: const BorderSide(color: Colors.red),
+                              side: const BorderSide(color: Colors.deepPurple),
                             ),
                             onPressed: () {
                               Navigator.of(context).push(
@@ -279,7 +279,7 @@ class _UserInfoScreenState extends State<LoanList>
                   leftIcon:
                   const Icon(Icons.account_balance, color: Colors.white),
                   headerBackgroundColor: Colors.black,
-                  headerBackgroundColorOpened: Colors.red,
+                  headerBackgroundColorOpened: Color(0xFF512DA8),
                   header: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -306,7 +306,7 @@ class _UserInfoScreenState extends State<LoanList>
                           FlatButton(
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(18.0),
-                              side: const BorderSide(color: Colors.red),
+                              side: const BorderSide(color: Colors.deepPurple),
                             ),
                             onPressed: () {
                               Navigator.of(context).push(

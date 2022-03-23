@@ -1,10 +1,8 @@
-
 import 'package:flutter/material.dart';
 import 'package:studentfin/Scholarship/scholarshipList.dart';
 
 import '../applied.dart';
 import '../splash_screen.dart';
-
 
 class Emi extends StatefulWidget {
   static const routeName = '/user-info';
@@ -15,11 +13,8 @@ class Emi extends StatefulWidget {
 
 class _UserInfoScreenState extends State<Emi>
     with SingleTickerProviderStateMixin {
-
-
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
         backgroundColor: Colors.white,
         body: SafeArea(
@@ -35,9 +30,11 @@ class _UserInfoScreenState extends State<Emi>
                     padding: const EdgeInsets.all(16.0),
                     child: Container(
                       decoration: BoxDecoration(
-                          border: Border.all(
-                          ),
-                          borderRadius: BorderRadius.all(Radius.circular(20))
+                        color: Color(0xFF37474F),
+                        border: Border.all(),
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(20),
+                        ),
                       ),
                       child: Center(
                         child: Padding(
@@ -50,18 +47,16 @@ class _UserInfoScreenState extends State<Emi>
                                 style: TextStyle(
                                   fontSize: 18.0,
                                   fontWeight: FontWeight.bold,
-                                  color: Colors.black,
+                                  color: Colors.white,
                                 ),
                               ),
                               Text(
                                 'Loan Amount : 1500000\nEMI 1 : 4 Years – 5%(Monthly)\nEMI 2 : 10 Years – 7.5%(Monthly)\nEMI 3 : Flexi – 7.5-10%',
                                 style: TextStyle(
                                   fontSize: 15.0,
-                                  color: Colors.black,
+                                  color: Colors.white,
                                 ),
                               ),
-
-
                             ],
                           ),
                         ),
@@ -72,9 +67,9 @@ class _UserInfoScreenState extends State<Emi>
                     padding: const EdgeInsets.all(16.0),
                     child: Container(
                       decoration: BoxDecoration(
-                          border: Border.all(
-                          ),
-                          borderRadius: BorderRadius.all(Radius.circular(20))
+                        border: Border.all(),
+                        borderRadius: BorderRadius.all(Radius.circular(20)),
+                        color: Color(0xFF37474F),
                       ),
                       child: Padding(
                         padding: const EdgeInsets.all(16.0),
@@ -86,62 +81,70 @@ class _UserInfoScreenState extends State<Emi>
                               style: TextStyle(
                                 fontSize: 18.0,
                                 fontWeight: FontWeight.bold,
-                                color: Colors.black,
+                                color: Colors.white,
                               ),
                             ),
                             Text(
                               'Plan – EMI 1\nLoan Amount –  1500000\nTenure – 4 Years\nInterest Rate – 5%\nMonthly EMI –  34,545\nTotal Interest -  1,58,109',
                               style: TextStyle(
                                 fontSize: 15.0,
-                                color: Colors.black,
+                                color: Colors.white,
                               ),
                             ),
                             Divider(
-                              color: Colors.black,
-
+                              color: Colors.white,
                               thickness: 2,
                             ),
                             Text(
                               'Total Amount -  16,58,109',
                               style: TextStyle(
                                 fontSize: 15.0,
-                                color: Colors.black,
+                                color: Colors.white,
                               ),
                             ),
-
-
                           ],
                         ),
                       ),
                     ),
                   ),
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
+                      ButtonTheme(
+                        minWidth: 300.0,
+                        child: RaisedButton(
+                          elevation: 5,
+                          padding: const EdgeInsets.symmetric(
+                              vertical: 16, horizontal: 38),
+                          color: Colors.teal,
+                          textColor: Colors.white,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20)),
+                          child: const Text(
+                            "Apply Now",
+                            style: TextStyle(fontSize: 18),
+                          ),
+                          onPressed: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) {
+                                  return SplashScreen();
+                                },
+                              ),
+                            );
 
-
-                      FlatButton(
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(18.0),
-                          side: const BorderSide(color: Colors.red),
+                          },
                         ),
-                        onPressed: () {
-                          Navigator.of(context).push(
-                            MaterialPageRoute(
-                              builder: (context) {
-                                return SplashScreen();
-                              },
-                            ),
-                          );
-                        },
-                        child: const Text("Apply now"),
                       ),
-                      SizedBox(width: 20,),
+                      SizedBox(
+                        width: 20,
+                      ),
                     ],
                   ),
-                  SizedBox(height: 20,),
+                  SizedBox(
+                    height: 20,
+                  ),
                 ],
-
               ),
             ),
           ),

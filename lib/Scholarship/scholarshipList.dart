@@ -23,15 +23,15 @@ class _UserInfoScreenState extends State<ScholarshipList>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0xFF004D40),
         body: Column(
           children: [
             const SizedBox(
-              height: 40,
+              height: 70,
             ),
             const Text("Available Options: ",
                 style: TextStyle(
-                    color: Colors.deepOrange,
+                    color: Colors.white,
                     fontSize: 30,
                     fontWeight: FontWeight.bold,
                     fontStyle: FontStyle.normal,
@@ -60,7 +60,7 @@ class _UserInfoScreenState extends State<ScholarshipList>
                     leftIcon:
                         const Icon(Icons.insights_rounded, color: Colors.white),
                     headerBackgroundColor: Colors.black,
-                    headerBackgroundColorOpened: Colors.red,
+                    headerBackgroundColorOpened: Color(0xFF512DA8),
                     header: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -90,7 +90,7 @@ class _UserInfoScreenState extends State<ScholarshipList>
                             FlatButton(
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(18.0),
-                                side: const BorderSide(color: Colors.red),
+                                side: const BorderSide(color:Color(0xFF512DA8)),
                               ),
                               onPressed: () {
                                 Navigator.of(context).push(
@@ -118,7 +118,7 @@ class _UserInfoScreenState extends State<ScholarshipList>
                     leftIcon:
                     const Icon(Icons.insights_rounded, color: Colors.white),
                     headerBackgroundColor: Colors.black,
-                    headerBackgroundColorOpened: Colors.red,
+                    headerBackgroundColorOpened: Color(0xFF512DA8),
                     header: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -148,7 +148,7 @@ class _UserInfoScreenState extends State<ScholarshipList>
                             FlatButton(
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(18.0),
-                                side: const BorderSide(color: Colors.red),
+                                side: const BorderSide(color: Color(0xFF512DA8)),
                               ),
                               onPressed: () {
                                 Navigator.of(context).push(
@@ -176,7 +176,7 @@ class _UserInfoScreenState extends State<ScholarshipList>
                     leftIcon:
                     const Icon(Icons.insights_rounded, color: Colors.white),
                     headerBackgroundColor: Colors.black,
-                    headerBackgroundColorOpened: Colors.red,
+                    headerBackgroundColorOpened: Color(0xFF512DA8),
                     header: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -206,7 +206,7 @@ class _UserInfoScreenState extends State<ScholarshipList>
                             FlatButton(
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(18.0),
-                                side: const BorderSide(color: Colors.red),
+                                side: const BorderSide(color: Color(0xFF512DA8)),
                               ),
                               onPressed: () {
                                 Navigator.of(context).push(
@@ -234,7 +234,7 @@ class _UserInfoScreenState extends State<ScholarshipList>
                     leftIcon:
                     const Icon(Icons.insights_rounded, color: Colors.white),
                     headerBackgroundColor: Colors.black,
-                    headerBackgroundColorOpened: Colors.red,
+                    headerBackgroundColorOpened: Color(0xFF512DA8),
                     header: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -264,7 +264,7 @@ class _UserInfoScreenState extends State<ScholarshipList>
                             FlatButton(
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(18.0),
-                                side: const BorderSide(color: Colors.red),
+                                side: const BorderSide(color: Color(0xFF512DA8)),
                               ),
                               onPressed: () {
                                 Navigator.of(context).push(
@@ -291,7 +291,7 @@ class _UserInfoScreenState extends State<ScholarshipList>
                     leftIcon:
                     const Icon(Icons.insights_rounded, color: Colors.white),
                     headerBackgroundColor: Colors.black,
-                    headerBackgroundColorOpened: Colors.red,
+                    headerBackgroundColorOpened: Color(0xFF512DA8),
                     header: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -321,7 +321,7 @@ class _UserInfoScreenState extends State<ScholarshipList>
                             FlatButton(
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(18.0),
-                                side: const BorderSide(color: Colors.red),
+                                side: const BorderSide(color: Color(0xFF512DA8)),
                               ),
                               onPressed: () {
                                 Navigator.of(context).push(

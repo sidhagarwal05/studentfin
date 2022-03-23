@@ -21,21 +21,20 @@ class _UserInfoScreenState extends State<Home>
   Widget build(BuildContext context) {
 
     return Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0xFF004D40),
         body: SafeArea(
           child: Center(
             child: SingleChildScrollView(
               child: Column(
                 children: <Widget>[
                   const Image(
-                    image: AssetImage("assets/logo.png"),
+                    image: AssetImage("assets/logo2.png"),
                     height: 300,
-                    width: 300,
                   ),
               ButtonTheme(
                 minWidth: 300.0,
                   child: RaisedButton(
-                    elevation: 4,
+                    elevation: 5,
                     padding: const EdgeInsets.symmetric(
                         vertical: 16, horizontal: 38),
                     color: Colors.teal,
@@ -64,7 +63,7 @@ class _UserInfoScreenState extends State<Home>
                   ButtonTheme(
                     minWidth: 300.0,
                     child: RaisedButton(
-                      elevation: 4,
+                      elevation: 5,
                       padding: const EdgeInsets.symmetric(
                           vertical: 16, horizontal: 38),
                       color: Colors.teal,
@@ -93,7 +92,7 @@ class _UserInfoScreenState extends State<Home>
                   ButtonTheme(
                     minWidth: 300.0,
                     child: RaisedButton(
-                      elevation: 4,
+                      elevation: 5,
                       padding: const EdgeInsets.symmetric(
                           vertical: 16, horizontal: 38),
                       color: Colors.teal,
