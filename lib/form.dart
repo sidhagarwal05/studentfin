@@ -3,12 +3,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:studentfin/splashscreen2.dart';
-
-import 'auth.dart';
-import 'home.dart';
-import 'login_page.dart';
-
-import 'package:syncfusion_flutter_datepicker/datepicker.dart';
+import 'package:file_picker/file_picker.dart';
 
 class UserInfoScreen extends StatefulWidget {
   static const routeName = '/user-info';
@@ -24,9 +19,12 @@ class _UserInfoScreenState extends State<UserInfoScreen>
   TextEditingController _emailController = new TextEditingController();
   TextEditingController _incomeController = new TextEditingController();
   TextEditingController _instituteController = new TextEditingController();
-  bool _init = true;
+
+
   var uid;
-  String _selectedDate = '';
+  FilePickerResult? result;
+  String familyIncomeProof = 'Attach Document to support Family Income';
+  String idCardProof = 'Attach ID Card';
   String initValue="Select your Birth Date";
   bool isDateSelected= false;
   late DateTime birthDate; // instance of DateTime
@@ -261,6 +259,55 @@ class _UserInfoScreenState extends State<UserInfoScreen>
                             decoration: BoxDecoration(
                                 color: Colors.blueGrey[300],
                                 borderRadius: BorderRadius.circular(20)),
+                            child: GestureDetector(
+                              onTap: () async {
+                                result = await FilePicker.platform.pickFiles(
+                                  type: FileType.custom,
+                                  allowedExtensions: ['pdf',],
+                                );
+
+                                if(result != null) {
+                                  setState(() {
+                                    familyIncomeProof=result!.names.first;
+                                  });
+
+
+                                } else {
+                                  // User canceled the picker
+                                }
+                              },
+                              child: Column(
+                                children: [
+                                  SizedBox(height: 5,),
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.start ,
+                                    children: [
+                                      const SizedBox(width: 5,),
+                                      const Icon(
+                                        Icons.attachment,
+                                        size: 40,
+                                        color: Colors.black,
+                                      ),
+                                      const SizedBox(width: 20,),
+                                      Text(familyIncomeProof,
+                                        style: TextStyle(fontSize: 13),)
+                                    ],
+                                  ),
+                                  SizedBox(height: 5,),
+                                ],
+                              ),
+                            ),
+
+                          ),
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          Container(
+                            width: double.infinity,
+                            padding: EdgeInsets.all(8),
+                            decoration: BoxDecoration(
+                                color: Colors.blueGrey[300],
+                                borderRadius: BorderRadius.circular(20)),
                             child: TextFormField(
                               keyboardType: TextInputType.text,
                               autocorrect: false,
@@ -289,7 +336,54 @@ class _UserInfoScreenState extends State<UserInfoScreen>
 
 
                           const SizedBox(
-                            height: 15,
+                            height: 10,
+                          ),
+                          Container(
+                            width: double.infinity,
+                            padding: EdgeInsets.all(8),
+                            decoration: BoxDecoration(
+                                color: Colors.blueGrey[300],
+                                borderRadius: BorderRadius.circular(20)),
+                            child: GestureDetector(
+                              onTap: () async {
+                                result = await FilePicker.platform.pickFiles(
+                                );
+
+                                if(result != null) {
+                                  setState(() {
+                                    idCardProof=result!.names.first;
+                                  });
+
+
+                                } else {
+                                  // User canceled the picker
+                                }
+                              },
+                              child: Column(
+                                children: [
+                                  SizedBox(height: 5,),
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.start ,
+                                    children: [
+                                      const SizedBox(width: 5,),
+                                      const Icon(
+                                        Icons.attachment,
+                                        size: 40,
+                                        color: Colors.black,
+                                      ),
+                                      const SizedBox(width: 20,),
+                                      Text(idCardProof,
+                                        style: TextStyle(fontSize: 13),)
+                                    ],
+                                  ),
+                                  SizedBox(height: 5,),
+                                ],
+                              ),
+                            ),
+
+                          ),
+                          const SizedBox(
+                            height: 10,
                           ),
                           RaisedButton(
                             elevation: 4,

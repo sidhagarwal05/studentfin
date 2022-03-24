@@ -71,12 +71,12 @@ class _UserInfoScreenState extends State<LoanList>
                           height: 15,
                         ),
                         Text('Punjab National Bank Education Loan:', style: _headerStyle),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            Text('♡ 4.8', style: _headerStyle),
-                          ],
-                        ),
+                        // Row(
+                        //   mainAxisAlignment: MainAxisAlignment.start,
+                        //   children: [
+                        //     Text('♡ 4.8', style: _headerStyle),
+                        //   ],
+                        // ),
                         const SizedBox(
                           height: 10,
                         )
@@ -125,12 +125,12 @@ class _UserInfoScreenState extends State<LoanList>
                           height: 15,
                         ),
                         Text('SBI Education Loan', style: _headerStyle),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            Text('♡ 4.5', style: _headerStyle),
-                          ],
-                        ),
+                        // Row(
+                        //   mainAxisAlignment: MainAxisAlignment.start,
+                        //   children: [
+                        //     Text('♡ 4.5', style: _headerStyle),
+                        //   ],
+                        // ),
                         const SizedBox(
                           height: 10,
                         )
@@ -179,12 +179,12 @@ class _UserInfoScreenState extends State<LoanList>
                           height: 15,
                         ),
                         Text('Axis Bank Education Loan', style: _headerStyle),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            Text('♡ 4.9', style: _headerStyle),
-                          ],
-                        ),
+                        // Row(
+                        //   mainAxisAlignment: MainAxisAlignment.start,
+                        //   children: [
+                        //     Text('♡ 4.9', style: _headerStyle),
+                        //   ],
+                        // ),
                         const SizedBox(
                           height: 10,
                         )
@@ -233,12 +233,12 @@ class _UserInfoScreenState extends State<LoanList>
                           height: 15,
                         ),
                         Text('HDFC Bank Education Loan', style: _headerStyle),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            Text('♡ 4.9', style: _headerStyle),
-                          ],
-                        ),
+                        // Row(
+                        //   mainAxisAlignment: MainAxisAlignment.start,
+                        //   children: [
+                        //     Text('♡ 4.9', style: _headerStyle),
+                        //   ],
+                        // ),
                         const SizedBox(
                           height: 10,
                         )
@@ -287,12 +287,12 @@ class _UserInfoScreenState extends State<LoanList>
                           height: 15,
                         ),
                         Text('Tata Capital Education Loan', style: _headerStyle),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            Text('♡ 4.6', style: _headerStyle),
-                          ],
-                        ),
+                        // Row(
+                        //   mainAxisAlignment: MainAxisAlignment.start,
+                        //   children: [
+                        //     Text('♡ 4.6', style: _headerStyle),
+                        //   ],
+                        // ),
                         const SizedBox(
                           height: 10,
                         )
