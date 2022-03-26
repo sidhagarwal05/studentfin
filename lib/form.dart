@@ -23,7 +23,7 @@ class _UserInfoScreenState extends State<UserInfoScreen>
 
   var uid;
   FilePickerResult? result;
-  String familyIncomeProof = 'Attach Document to support Family Income';
+  String familyIncomeProof = 'Attach Documents';
   String idCardProof = 'Attach ID Card';
   String initValue="Select your Birth Date";
   bool isDateSelected= false;
